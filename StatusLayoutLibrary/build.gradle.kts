@@ -55,7 +55,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "com.github.OnurKaraduman23"
                 artifactId = "statuslayout"
-                version = "1.0.3"
+                version = "1.0.4"
                 artifact("build/outputs/aar/StatusLayoutLibrary-release.aar")
             }
         }
