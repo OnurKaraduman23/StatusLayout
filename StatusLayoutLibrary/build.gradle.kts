@@ -53,11 +53,12 @@ afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("maven") {
-                from (components["release"])
                 groupId = "com.github.OnurKaraduman23"
-                artifactId = "StatusLayout"
+                artifactId = "statuslayout"
                 version = "1.0.1"
+                artifact("build/outputs/aar/StatusLayoutLibrary-release.aar")
             }
         }
+
     }
 }
