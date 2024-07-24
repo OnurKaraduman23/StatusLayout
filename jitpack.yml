@@ -1,11 +1,4 @@
 jdk:
-  - openjdk11
-
+  - openjdk22
 before_install:
   - ./scripts/prepareJitpackEnvironment.sh
-
-install:
-  - ./gradlew clean assemble
-
-script:
-  - ./gradlew build
